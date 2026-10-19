@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>MRAK :: Тёмный код мести</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="stage">
+  <canvas id="scene"></canvas>
+  <div id="crt"></div>
+
+  <!-- HUD / overlays поверх 3D -->
+  <div id="crosshair"></div>
+  <div id="hud"></div>
+  <div id="prompt"></div>
+  <div id="toast"></div>
+  <div id="cineFade"></div>
+  <div id="cineCap" class="hidden"><div id="cineBars"></div>
+    <div id="cineTitle"></div><div id="cineSub"></div>
+    <div id="cineHint">ENTER — дальше • ESC — пропустить</div></div>
+
+  <!-- рабочий стол Kali -->
+  <div id="desktop" class="hidden"></div>
+</div>
+
+<!-- ГЛАВНОЕ МЕНЮ -->
+<div id="menu">
+  <div class="rain"></div>
+  <div class="menuInner">
+    <h1 class="glitch" data-t="DARK REVENGE">DARK REVENGE</h1>
+    <div class="subtitle">MRAK :: Тёмный код мести</div>
+    <div class="disclaimer">
+      ⚠ ДИСКЛЕЙМЕР. Это художественная игра. Все цели, банк и персонажи вымышлены.
+      Техники показаны «как в кино» и не являются инструкцией. Взлом чужих систем без
+      разрешения — преступление. Хочешь учиться по-настоящему и легально: TryHackMe,
+      HackTheBox, PortSwigger, CTF.
+    </div>
+    <div class="menuBtns">
+      <button id="classicBtn" class="mbtn primary">КЛАССИКА</button>
+      <button id="continueBtn" class="mbtn">ПРОДОЛЖИТЬ</button>
+      <button id="creditsBtn" class="mbtn">ТИТРЫ</button>
+    </div>
+    <div class="toggles">
+      <button id="voiceBtn" class="tbtn">Озвучка: RU</button>
+      <button id="soundBtn" class="tbtn">Звук: ВКЛ</button>
+    </div>
+    <div class="hint-line">WASD — ходьба • Shift — бег • мышь — осмотр • E — действие • клик — захват курсора, Esc — курсор</div>
+  </div>
+</div>
+
+<!-- ТИТРЫ -->
+<div id="credits" class="hidden">
+  <div class="creditsInner">
+    <h2>ТИТРЫ</h2>
+    <p><b>DARK REVENGE / MRAK :: Тёмный код мести</b></p>
+    <p>Художественный симулятор мести. Фантастика.</p>
+    <p>Ячейка PHANTOM:<br>Mister Марку$ — мозг • Mrak — руки • BadBaBBy/Ариана — соц.инженерия • BlackAngel/Питр — железо</p>
+    <p>Движок: чистый HTML/CSS/JS + Three.js (локально). Полностью офлайн.</p>
+    <p class="warn">Все цели и персонажи вымышлены. Взлом без разрешения — преступление.<br>
+      Учись легально: TryHackMe • HackTheBox • PortSwigger • CTF.</p>
+    <button id="creditsBack" class="mbtn">НАЗАД</button>
+  </div>
+</div>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
